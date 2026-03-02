@@ -1,29 +1,49 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TTT Systems - Professional IT Solutions and Technology Services in South Africa">
+    <meta name="description" content="TTT Systems - Futuristic IT Solutions and Technology Services in South Africa">
     <title>TTT Systems | Transforming Technology Together</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Cyberpunk Background Effects -->
+    <div class="cyber-grid"></div>
+    <div class="scan-line"></div>
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
 
     <!-- ===== NAVBAR ===== -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="#home" class="nav-logo">
                 <img src="ttt_logo1.jpeg" alt="TTT Systems Logo">
+                <span class="logo-glitch" data-text="TTT-SYSTEMS">TTT-SYSTEMS</span>
             </a>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home"      class="nav-link">Home</a></li>
-                <li><a href="#about"     class="nav-link">About</a></li>
-                <li><a href="#services"  class="nav-link">Services</a></li>
-                <li><a href="#solutions" class="nav-link">Solutions</a></li>
-                <li><a href="#contact"   class="nav-link nav-cta">Contact Us</a></li>
+                <li><a href="#home" class="nav-link">
+                    <span class="nav-text" data-text="HOME">HOME</span>
+                </a></li>
+                <li><a href="#about" class="nav-link">
+                    <span class="nav-text" data-text="ABOUT">ABOUT</span>
+                </a></li>
+                <li><a href="#services" class="nav-link">
+                    <span class="nav-text" data-text="SERVICES">SERVICES</span>
+                </a></li>
+                <li><a href="#solutions" class="nav-link">
+                    <span class="nav-text" data-text="SOLUTIONS">SOLUTIONS</span>
+                </a></li>
+                <li><a href="#contact" class="nav-link nav-cta">
+                    <span class="nav-text">CONNECT</span>
+                    <span class="cta-glow"></span>
+                </a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
@@ -33,63 +53,141 @@
 
     <!-- ===== HERO ===== -->
     <section id="home" class="hero">
-        <div class="hero-bg-grid"></div>
-        <div class="hero-accent-circle"></div>
+        <div class="hero-circuit"></div>
+        <div class="hero-hologram"></div>
+        
         <div class="container hero-container">
-            <div class="hero-badge">🇿🇦 South Africa's Trusted IT Partner</div>
+            <div class="hero-badge">
+                <span class="badge-icon">⚡</span>
+                <span class="badge-text">SOUTH AFRICA'S TECH VANGUARD</span>
+                <span class="badge-pulse"></span>
+            </div>
+            
             <h1 class="hero-title">
-                Transforming<br>
-                <span class="hero-title-accent">Technology</span><br>
-                Together
+                <span class="title-line" data-text="TRANSFORMING">TRANSFORMING</span>
+                <span class="title-line title-accent" data-text="TECHNOLOGY">TECHNOLOGY</span>
+                <span class="title-line" data-text="TOGETHER">TOGETHER</span>
             </h1>
-            <p class="hero-sub">We deliver innovative IT solutions that power business growth, protect your data, and keep your operations running 24/7.</p>
+            
+            <p class="hero-sub">
+                <span class="terminal-prefix">$</span> 
+                Next-generation IT solutions powering digital transformation across Africa
+            </p>
+            
             <div class="hero-actions">
-                <a href="#services" class="btn btn-primary">Explore Services</a>
-                <a href="#contact"  class="btn btn-outline">Talk to Us</a>
+                <a href="#services" class="cyber-btn cyber-btn-primary">
+                    <span class="btn-content">EXPLORE SERVICES</span>
+                    <span class="btn-glitch"></span>
+                </a>
+                <a href="#contact" class="cyber-btn cyber-btn-ghost">
+                    <span class="btn-content">INITIATE CONTACT</span>
+                    <span class="btn-scan"></span>
+                </a>
             </div>
+            
             <div class="hero-stats">
-                <div class="hero-stat"><span class="hero-stat-num">10+</span><span class="hero-stat-label">Years Experience</span></div>
-                <div class="hero-stat-divider"></div>
-                <div class="hero-stat"><span class="hero-stat-num">100+</span><span class="hero-stat-label">Projects Done</span></div>
-                <div class="hero-stat-divider"></div>
-                <div class="hero-stat"><span class="hero-stat-num">50+</span><span class="hero-stat-label">Happy Clients</span></div>
-                <div class="hero-stat-divider"></div>
-                <div class="hero-stat"><span class="hero-stat-num">24/7</span><span class="hero-stat-label">Support</span></div>
+                <div class="stat-item">
+                    <div class="stat-num" data-target="10">0</div>
+                    <div class="stat-label">YEARS_ONLINE</div>
+                    <div class="stat-bar"></div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-num" data-target="100">0</div>
+                    <div class="stat-label">MISSIONS_COMPLETE</div>
+                    <div class="stat-bar"></div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-num" data-target="50">0</div>
+                    <div class="stat-label">CLIENTS_ACTIVE</div>
+                    <div class="stat-bar"></div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-num">24/7</div>
+                    <div class="stat-label">UPTIME_STATUS</div>
+                    <div class="stat-bar"></div>
+                </div>
             </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>SCROLL</span>
         </div>
     </section>
 
     <!-- ===== ABOUT ===== -->
     <section id="about" class="about section">
         <div class="container">
-            <div class="section-label">Who We Are</div>
-            <h2 class="section-title">Built for the Future of <span class="text-red">Business Technology</span></h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p class="about-lead">TTT Systems is a leading technology solutions provider headquartered in Randburg, Gauteng. We specialize in delivering IT infrastructure, cybersecurity, and digital transformation services tailored to South African businesses.</p>
-                    <p>Our team of certified professionals brings deep expertise across systems integration, cloud platforms, and enterprise networking. We don't just implement technology — we align it with your business goals.</p>
-                    <a href="#contact" class="btn btn-primary" style="margin-top:2rem">Work With Us</a>
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">WHO_WE_ARE</span>
+                    <span class="label-bracket">]</span>
                 </div>
-                <div class="about-cards">
-                    <div class="about-card">
-                        <div class="about-card-icon">⚡</div>
-                        <h4>Fast Delivery</h4>
-                        <p>Agile project execution with minimal disruption to your operations</p>
+                <h2 class="section-title">
+                    Built for the Future of
+                    <span class="title-gradient">Business Technology</span>
+                </h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="text-highlight">TTT Systems operates at the intersection of innovation and reliability. Based in Randburg, Gauteng, we architect enterprise-grade IT infrastructure that scales with your ambitions.</p>
+                        <p>Our certified engineers deploy cutting-edge solutions across systems integration, cybersecurity, cloud architecture, and digital transformation. We don't just implement technology—we engineer competitive advantage.</p>
                     </div>
-                    <div class="about-card">
-                        <div class="about-card-icon">🔒</div>
-                        <h4>Secure by Design</h4>
-                        <p>Security built into every solution from the ground up</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-line">
+                            <span class="feature-icon">▸</span>
+                            <span class="feature-text">RAPID DEPLOYMENT PROTOCOLS</span>
+                        </div>
+                        <div class="feature-line">
+                            <span class="feature-icon">▸</span>
+                            <span class="feature-text">MILITARY-GRADE SECURITY</span>
+                        </div>
+                        <div class="feature-line">
+                            <span class="feature-icon">▸</span>
+                            <span class="feature-text">PERFORMANCE-DRIVEN RESULTS</span>
+                        </div>
+                        <div class="feature-line">
+                            <span class="feature-icon">▸</span>
+                            <span class="feature-text">LIFECYCLE PARTNERSHIP MODEL</span>
+                        </div>
                     </div>
-                    <div class="about-card">
-                        <div class="about-card-icon">🎯</div>
-                        <h4>Results Focused</h4>
-                        <p>Measurable outcomes aligned to your business objectives</p>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-card-icon">🤝</div>
-                        <h4>Long-Term Partner</h4>
-                        <p>Ongoing support and growth alongside your business</p>
+                    
+                    <a href="#contact" class="cyber-btn cyber-btn-outline">
+                        <span class="btn-content">PARTNER WITH US</span>
+                    </a>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="holo-card">
+                        <div class="holo-header">SYSTEM_STATUS</div>
+                        <div class="holo-body">
+                            <div class="status-line">
+                                <span class="status-key">INFRASTRUCTURE:</span>
+                                <span class="status-val status-active">OPTIMAL</span>
+                            </div>
+                            <div class="status-line">
+                                <span class="status-key">SECURITY:</span>
+                                <span class="status-val status-active">FORTIFIED</span>
+                            </div>
+                            <div class="status-line">
+                                <span class="status-key">NETWORK:</span>
+                                <span class="status-val status-active">STABLE</span>
+                            </div>
+                            <div class="status-line">
+                                <span class="status-key">SUPPORT:</span>
+                                <span class="status-val status-active">ONLINE</span>
+                            </div>
+                        </div>
+                        <div class="holo-footer">
+                            <span class="footer-text">ALL_SYSTEMS_OPERATIONAL</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -97,61 +195,147 @@
     </section>
 
     <!-- ===== SERVICES ===== -->
-    <section id="services" class="services section section-dark">
+    <section id="services" class="services section">
         <div class="container">
-            <div class="section-label light">What We Do</div>
-            <h2 class="section-title light">Our <span class="text-red">Core Services</span></h2>
-            <p class="section-desc light">Comprehensive IT solutions designed to empower your business at every level</p>
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">CORE_CAPABILITIES</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Our <span class="title-gradient">Service Matrix</span>
+                </h2>
+            </div>
+            
             <div class="services-grid">
-
-                <div class="service-card" data-index="01">
-                    <div class="service-card-top">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <div class="service-card" data-service="01">
+                    <div class="card-corner tl"></div>
+                    <div class="card-corner tr"></div>
+                    <div class="card-corner bl"></div>
+                    <div class="card-corner br"></div>
+                    <div class="service-number">01</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
                     </div>
-                    <h3>IT Infrastructure</h3>
-                    <p>Design, deployment, and management of robust IT infrastructure tailored for performance and scale.</p>
+                    <h3 class="service-title">IT INFRASTRUCTURE</h3>
+                    <p class="service-desc">Enterprise-grade infrastructure architecture designed for maximum performance, redundancy, and scalability.</p>
+                    <div class="service-tags">
+                        <span class="tag">SERVERS</span>
+                        <span class="tag">STORAGE</span>
+                        <span class="tag">VIRTUALIZATION</span>
+                    </div>
                 </div>
 
-                <div class="service-card" data-index="02">
-                    <div class="service-card-top">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                <div class="service-card" data-service="02">
+                    <div class="card-corner tl"></div>
+                    <div class="card-corner tr"></div>
+                    <div class="card-corner bl"></div>
+                    <div class="card-corner br"></div>
+                    <div class="service-number">02</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
                     </div>
-                    <h3>Systems Integration</h3>
-                    <p>Seamless integration of diverse platforms and applications to create unified business processes.</p>
+                    <h3 class="service-title">SYSTEMS INTEGRATION</h3>
+                    <p class="service-desc">Seamless integration protocols connecting disparate platforms into unified, efficient business ecosystems.</p>
+                    <div class="service-tags">
+                        <span class="tag">API</span>
+                        <span class="tag">MIDDLEWARE</span>
+                        <span class="tag">AUTOMATION</span>
+                    </div>
                 </div>
 
-                <div class="service-card" data-index="03">
-                    <div class="service-card-top">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <div class="service-card" data-service="03">
+                    <div class="card-corner tl"></div>
+                    <div class="card-corner tr"></div>
+                    <div class="card-corner bl"></div>
+                    <div class="card-corner br"></div>
+                    <div class="service-number">03</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
                     </div>
-                    <h3>Network Solutions</h3>
-                    <p>Advanced LAN/WAN networking that ensures fast, reliable, and secure connectivity across your organisation.</p>
+                    <h3 class="service-title">NETWORK SOLUTIONS</h3>
+                    <p class="service-desc">High-velocity network infrastructure ensuring ultra-low latency and maximum throughput across your organization.</p>
+                    <div class="service-tags">
+                        <span class="tag">LAN/WAN</span>
+                        <span class="tag">SD-WAN</span>
+                        <span class="tag">5G</span>
+                    </div>
                 </div>
 
-                <div class="service-card" data-index="04">
-                    <div class="service-card-top">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <div class="service-card" data-service="04">
+                    <div class="card-corner tl"></div>
+                    <div class="card-corner tr"></div>
+                    <div class="card-corner bl"></div>
+                    <div class="card-corner br"></div>
+                    <div class="service-number">04</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
                     </div>
-                    <h3>Cybersecurity</h3>
-                    <p>End-to-end security solutions protecting your digital assets against modern threats and ensuring compliance.</p>
+                    <h3 class="service-title">CYBERSECURITY</h3>
+                    <p class="service-desc">Multi-layered defense systems protecting your digital assets against advanced persistent threats.</p>
+                    <div class="service-tags">
+                        <span class="tag">FIREWALL</span>
+                        <span class="tag">ENCRYPTION</span>
+                        <span class="tag">SOC</span>
+                    </div>
                 </div>
 
-                <div class="service-card" data-index="05">
-                    <div class="service-card-top">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                <div class="service-card" data-service="05">
+                    <div class="card-corner tl"></div>
+                    <div class="card-corner tr"></div>
+                    <div class="card-corner bl"></div>
+                    <div class="card-corner br"></div>
+                    <div class="service-number">05</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
                     </div>
-                    <h3>Cloud Services</h3>
-                    <p>Cloud migration, optimisation, and managed services to enhance scalability and reduce costs.</p>
+                    <h3 class="service-title">CLOUD SERVICES</h3>
+                    <p class="service-desc">Hybrid and multi-cloud strategies engineered for agility, resilience, and cost optimization.</p>
+                    <div class="service-tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">AZURE</span>
+                        <span class="tag">GCP</span>
+                    </div>
                 </div>
 
-                <div class="service-card" data-index="06">
-                    <div class="service-card-top">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                <div class="service-card" data-service="06">
+                    <div class="card-corner tl"></div>
+                    <div class="card-corner tr"></div>
+                    <div class="card-corner bl"></div>
+                    <div class="card-corner br"></div>
+                    <div class="service-number">06</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
                     </div>
-                    <h3>IT Support & Maintenance</h3>
-                    <p>24/7 helpdesk and proactive maintenance to minimise downtime and keep your business running.</p>
+                    <h3 class="service-title">24/7 SUPPORT</h3>
+                    <p class="service-desc">Round-the-clock monitoring and rapid-response support ensuring zero-downtime operations.</p>
+                    <div class="service-tags">
+                        <span class="tag">HELPDESK</span>
+                        <span class="tag">MONITORING</span>
+                        <span class="tag">SLA</span>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -159,58 +343,41 @@
     <!-- ===== SOLUTIONS ===== -->
     <section id="solutions" class="solutions section">
         <div class="container">
-            <div class="section-label">Industries We Serve</div>
-            <h2 class="section-title">Tailored <span class="text-red">Industry Solutions</span></h2>
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">INDUSTRY_SOLUTIONS</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Sector-Specific <span class="title-gradient">Technology</span>
+                </h2>
+            </div>
+            
             <div class="solutions-grid">
                 <div class="solution-card">
-                    <div class="solution-num">01</div>
-                    <h3>Enterprise</h3>
-                    <p>Scalable infrastructure and managed services for large organisations with complex IT requirements.</p>
+                    <div class="solution-hex">01</div>
+                    <h3>ENTERPRISE</h3>
+                    <p>Mission-critical infrastructure for large-scale operations demanding maximum uptime and performance.</p>
+                    <div class="solution-link">DEPLOY →</div>
                 </div>
                 <div class="solution-card">
-                    <div class="solution-num">02</div>
+                    <div class="solution-hex">02</div>
                     <h3>SMB</h3>
-                    <p>Cost-effective, right-sized IT solutions helping small and medium businesses compete and grow.</p>
+                    <p>Scalable, cost-effective solutions empowering small and medium businesses to compete globally.</p>
+                    <div class="solution-link">DEPLOY →</div>
                 </div>
                 <div class="solution-card">
-                    <div class="solution-num">03</div>
-                    <h3>Healthcare</h3>
-                    <p>Secure, compliant technology for healthcare providers, protecting patient data and improving care.</p>
+                    <div class="solution-hex">03</div>
+                    <h3>HEALTHCARE</h3>
+                    <p>HIPAA-compliant systems safeguarding patient data while enabling seamless care delivery.</p>
+                    <div class="solution-link">DEPLOY →</div>
                 </div>
                 <div class="solution-card">
-                    <div class="solution-num">04</div>
-                    <h3>Financial Services</h3>
-                    <p>Robust, auditable IT systems for financial institutions ensuring security and regulatory compliance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== WHY US ===== -->
-    <section class="whyus section section-red">
-        <div class="container">
-            <div class="section-label light">Why TTT Systems</div>
-            <h2 class="section-title light">The TTT <span style="text-decoration:underline;text-decoration-color:rgba(255,255,255,0.4)">Difference</span></h2>
-            <div class="whyus-grid">
-                <div class="whyus-item">
-                    <div class="whyus-icon">🏅</div>
-                    <h3>Certified Experts</h3>
-                    <p>Our team holds industry certifications and brings real-world project experience across sectors.</p>
-                </div>
-                <div class="whyus-item">
-                    <div class="whyus-icon">🎯</div>
-                    <h3>Customer-First</h3>
-                    <p>Every solution is built around your specific business needs — not a generic off-the-shelf package.</p>
-                </div>
-                <div class="whyus-item">
-                    <div class="whyus-icon">🕐</div>
-                    <h3>Always Available</h3>
-                    <p>Round-the-clock support ensures you always have help when your business needs it most.</p>
-                </div>
-                <div class="whyus-item">
-                    <div class="whyus-icon">📈</div>
-                    <h3>Proven Results</h3>
-                    <p>A strong track record of successful IT projects delivered on time and within budget.</p>
+                    <div class="solution-hex">04</div>
+                    <h3>FINANCIAL</h3>
+                    <p>Bank-grade security and compliance frameworks for financial institutions and fintech.</p>
+                    <div class="solution-link">DEPLOY →</div>
                 </div>
             </div>
         </div>
@@ -219,130 +386,170 @@
     <!-- ===== CONTACT ===== -->
     <section id="contact" class="contact section">
         <div class="container">
-            <div class="section-label">Get In Touch</div>
-            <h2 class="section-title">Let's Build Something <span class="text-red">Great Together</span></h2>
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">ESTABLISH_CONNECTION</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Initiate <span class="title-gradient">Contact Protocol</span>
+                </h2>
+            </div>
+            
             <div class="contact-grid">
-
                 <div class="contact-info">
-                    <div class="contact-info-item">
-                        <div class="contact-info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <div class="info-terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-title">CONTACT_DATA.sys</span>
+                            <div class="terminal-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
                         </div>
-                        <div>
-                            <h4>Visit Us</h4>
-                            <p>Unit 4, Arms Office Park<br>27 Bond Street, Ferndale<br>Randburg, 2195, Gauteng<br>South Africa</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <div class="contact-info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        </div>
-                        <div>
-                            <h4>Call Us</h4>
-                            <p>+27 68 154 0303<br>+27 10 210 7093<br>+27 11 886 0667</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <div class="contact-info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        </div>
-                        <div>
-                            <h4>Email Us</h4>
-                            <p><a href="mailto:netthias@ttt-systems.com">netthias@ttt-systems.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <div class="contact-info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                        </div>
-                        <div>
-                            <h4>Website</h4>
-                            <p><a href="http://www.ttt-systems.com" target="_blank">www.ttt-systems.com</a></p>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="line-prefix">$</span>
+                                <span class="line-cmd">locate --address</span>
+                            </div>
+                            <div class="terminal-output">
+                                Unit 4, Arms Office Park<br>
+                                27 Bond Street, Ferndale<br>
+                                Randburg, 2195, Gauteng<br>
+                                South Africa
+                            </div>
+                            
+                            <div class="terminal-line">
+                                <span class="line-prefix">$</span>
+                                <span class="line-cmd">dial --voice</span>
+                            </div>
+                            <div class="terminal-output">
+                                +27 68 154 0303<br>
+                                +27 10 210 7093<br>
+                                +27 11 886 0667
+                            </div>
+                            
+                            <div class="terminal-line">
+                                <span class="line-prefix">$</span>
+                                <span class="line-cmd">send --email</span>
+                            </div>
+                            <div class="terminal-output">
+                                <a href="mailto:netthias@ttt-systems.com">netthias@ttt-systems.com</a>
+                            </div>
+                            
+                            <div class="terminal-line">
+                                <span class="line-prefix">$</span>
+                                <span class="line-cmd">open --web</span>
+                            </div>
+                            <div class="terminal-output">
+                                <a href="http://www.ttt-systems.com" target="_blank">www.ttt-systems.com</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <form class="contact-form" id="contactForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Netthias Banda" required>
+                
+                <div class="contact-form-wrapper">
+                    <form class="cyber-form" id="contactForm">
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label>FULL_NAME</label>
+                                <input type="text" name="name" placeholder="Enter designation" required>
+                            </div>
+                            <div class="form-field">
+                                <label>EMAIL_ADDRESS</label>
+                                <input type="email" name="email" placeholder="user@domain.com" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label>PHONE_NUMBER</label>
+                                <input type="tel" name="phone" placeholder="+27 xx xxx xxxx">
+                            </div>
+                            <div class="form-field">
+                                <label>SERVICE_REQUEST</label>
+                                <select name="service">
+                                    <option value="">Select service...</option>
+                                    <option>IT Infrastructure</option>
+                                    <option>Systems Integration</option>
+                                    <option>Network Solutions</option>
+                                    <option>Cybersecurity</option>
+                                    <option>Cloud Services</option>
+                                    <option>24/7 Support</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+27 xx xxx xxxx">
+                        <div class="form-field">
+                            <label>MESSAGE_PAYLOAD</label>
+                            <textarea name="message" rows="5" placeholder="Describe your requirements..." required></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="service">Service Interested In</label>
-                            <select id="service" name="service">
-                                <option value="">Select a service...</option>
-                                <option>IT Infrastructure</option>
-                                <option>Systems Integration</option>
-                                <option>Network Solutions</option>
-                                <option>Cybersecurity</option>
-                                <option>Cloud Services</option>
-                                <option>IT Support & Maintenance</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group full">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project or requirements..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
-                    <p class="form-note">We typically respond within 24 hours on business days.</p>
-                </form>
-
+                        <button type="submit" class="cyber-btn cyber-btn-primary cyber-btn-full">
+                            <span class="btn-content">TRANSMIT MESSAGE</span>
+                            <span class="btn-glitch"></span>
+                        </button>
+                        <div class="form-status">Response time: &lt; 24 hours</div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <img src="ttt_logo1.jpeg" alt="TTT Systems Logo" class="footer-logo">
-                <p>Transforming Technology Together</p>
-                <p class="footer-address">Randburg, Gauteng, South Africa</p>
+        <div class="footer-grid-bg"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="ttt_logo1.jpeg" alt="TTT Systems" class="footer-logo">
+                    <div class="footer-tagline">TRANSFORMING_TECHNOLOGY_TOGETHER</div>
+                    <div class="footer-location">
+                        <span class="loc-icon">📍</span>
+                        Randburg • Gauteng • South Africa
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>NAVIGATE</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#solutions">Solutions</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>SERVICES</h4>
+                        <a href="#services">Infrastructure</a>
+                        <a href="#services">Integration</a>
+                        <a href="#services">Cybersecurity</a>
+                        <a href="#services">Cloud</a>
+                        <a href="#services">Support</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>CONNECT</h4>
+                        <a href="mailto:netthias@ttt-systems.com">Email</a>
+                        <a href="tel:+27681540303">+27 68 154 0303</a>
+                        <a href="tel:+27102107093">+27 10 210 7093</a>
+                        <a href="tel:+27118860667">+27 11 886 0667</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-col">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#solutions">Solutions</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            
+            <div class="footer-bottom">
+                <div class="footer-line"></div>
+                <div class="footer-copyright">
+                    <span>© 2025 TTT SYSTEMS</span>
+                    <span class="divider">|</span>
+                    <span>ALL_RIGHTS_RESERVED</span>
+                    <span class="divider">|</span>
+                    <span class="status-indicator">
+                        <span class="status-dot"></span>
+                        SYSTEM_ONLINE
+                    </span>
+                </div>
             </div>
-            <div class="footer-col">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="#services">IT Infrastructure</a></li>
-                    <li><a href="#services">Systems Integration</a></li>
-                    <li><a href="#services">Cybersecurity</a></li>
-                    <li><a href="#services">Cloud Services</a></li>
-                    <li><a href="#services">IT Support</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Contact</h4>
-                <ul>
-                    <li><a href="mailto:netthias@ttt-systems.com">netthias@ttt-systems.com</a></li>
-                    <li>+27 68 154 0303</li>
-                    <li>+27 10 210 7093</li>
-                    <li>+27 11 886 0667</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 TTT Systems. All rights reserved. | Randburg, South Africa</p>
         </div>
     </footer>
 
