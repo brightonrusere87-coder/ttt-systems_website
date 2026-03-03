@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TTT Systems Integration Services - Seamless connectivity across your technology ecosystem">
+    <title>Systems Integration | TTT Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cyberpunk Background Effects -->
+    <div class="cyber-grid"></div>
+    <div class="scan-line"></div>
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="ttt_logo1.jpeg" alt="TTT Systems Logo">
+                <span class="logo-glitch" data-text="TTT-SYSTEMS">TTT-SYSTEMS</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link">
+                    <span class="nav-text" data-text="HOME">HOME</span>
+                </a></li>
+                <li><a href="index.html#about" class="nav-link">
+                    <span class="nav-text" data-text="ABOUT">ABOUT</span>
+                </a></li>
+                <li><a href="index.html#services" class="nav-link active">
+                    <span class="nav-text" data-text="SERVICES">SERVICES</span>
+                </a></li>
+                <li><a href="index.html#solutions" class="nav-link">
+                    <span class="nav-text" data-text="SOLUTIONS">SOLUTIONS</span>
+                </a></li>
+                <li><a href="index.html#contact" class="nav-link nav-cta">
+                    <span class="nav-text">CONNECT</span>
+                    <span class="cta-glow"></span>
+                </a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== SERVICE HERO ===== -->
+    <section class="service-hero">
+        <div class="hero-circuit"></div>
+        <div class="hero-hologram"></div>
+        
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">HOME</a>
+                <span class="breadcrumb-sep">/</span>
+                <a href="index.html#services">SERVICES</a>
+                <span class="breadcrumb-sep">/</span>
+                <span class="breadcrumb-current">SYSTEMS INTEGRATION</span>
+            </div>
+            
+            <div class="service-hero-content">
+                <div class="service-badge">
+                    <span class="badge-icon">⚡</span>
+                    <span class="badge-text">SERVICE_MODULE_02</span>
+                </div>
+                
+                <h1 class="service-hero-title">
+                    <span class="title-line">SYSTEMS</span>
+                    <span class="title-line title-accent">INTEGRATION</span>
+                </h1>
+                
+                <p class="service-hero-desc">
+                    Unifying disparate systems into a cohesive, intelligent ecosystem. We connect, automate, and orchestrate your technology stack for seamless data flow and operational efficiency.
+                </p>
+                
+                <div class="service-hero-stats">
+                    <div class="hero-stat-item">
+                        <div class="stat-value">500+</div>
+                        <div class="stat-label">API_INTEGRATIONS</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="stat-value">99.8%</div>
+                        <div class="stat-label">SUCCESS_RATE</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="stat-value">60%</div>
+                        <div class="stat-label">TIME_SAVED</div>
+                    </div>
+                </div>
+                
+                <div class="service-hero-actions">
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-primary">
+                        <span class="btn-content">REQUEST CONSULTATION</span>
+                        <span class="btn-glitch"></span>
+                    </a>
+                    <a href="#features" class="cyber-btn cyber-btn-ghost">
+                        <span class="btn-content">EXPLORE CAPABILITIES</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OVERVIEW ===== -->
+    <section class="service-overview section">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <div class="section-label">
+                        <span class="label-bracket">[</span>
+                        <span class="label-text">WHAT_WE_DELIVER</span>
+                        <span class="label-bracket">]</span>
+                    </div>
+                    <h2 class="section-title">
+                        Breaking Down <span class="title-gradient">Data Silos</span>
+                    </h2>
+                    <p class="overview-text">
+                        Modern businesses run on dozens of applications, databases, and platforms. When these systems can't communicate, you lose efficiency, accuracy, and competitive advantage. TTT Systems eliminates these barriers through intelligent integration architecture.
+                    </p>
+                    <p class="overview-text">
+                        We design and implement integration solutions that enable real-time data synchronization, automated workflows, and unified visibility across your entire technology landscape. From legacy system modernization to API-first architectures, we make your systems work together seamlessly.
+                    </p>
+                    
+                    <div class="overview-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <div class="highlight-text">Enterprise Service Bus (ESB) implementation</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <div class="highlight-text">RESTful and SOAP API development</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <div class="highlight-text">Real-time data synchronization</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <div class="highlight-text">Legacy system integration and modernization</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-visual">
+                    <div class="tech-stack-card">
+                        <div class="tech-header">INTEGRATION_STACK</div>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <span class="tech-label">ESB/MIDDLEWARE:</span>
+                                <span class="tech-value">MuleSoft • Dell Boomi • WSO2</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">API_MANAGEMENT:</span>
+                                <span class="tech-value">Apigee • Kong • Azure API</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">MESSAGING:</span>
+                                <span class="tech-value">RabbitMQ • Apache Kafka</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">iPaaS:</span>
+                                <span class="tech-value">Zapier • Workato • Tray.io</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">ETL:</span>
+                                <span class="tech-value">Talend • Informatica • SSIS</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">PROTOCOLS:</span>
+                                <span class="tech-value">REST • SOAP • GraphQL • gRPC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== KEY FEATURES ===== -->
+    <section id="features" class="service-features section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">CORE_CAPABILITIES</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Integration <span class="title-gradient">Services</span>
+                </h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="12" y1="8" x2="12" y2="12"/>
+                            <line x1="12" y1="16" x2="12.01" y2="16"/>
+                        </svg>
+                    </div>
+                    <h3>API DEVELOPMENT</h3>
+                    <p>Design and build robust RESTful and GraphQL APIs that enable secure, scalable communication between applications and services.</p>
+                    <div class="feature-tags">
+                        <span class="tag">REST</span>
+                        <span class="tag">GraphQL</span>
+                        <span class="tag">OAUTH</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        </svg>
+                    </div>
+                    <h3>MIDDLEWARE SOLUTIONS</h3>
+                    <p>Enterprise Service Bus and middleware platforms that orchestrate complex integrations and ensure reliable message delivery.</p>
+                    <div class="feature-tags">
+                        <span class="tag">ESB</span>
+                        <span class="tag">MULESOFT</span>
+                        <span class="tag">BOOMI</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3>DATA SYNCHRONIZATION</h3>
+                    <p>Real-time and batch data sync across systems ensuring consistency, accuracy, and up-to-date information organization-wide.</p>
+                    <div class="feature-tags">
+                        <span class="tag">REAL-TIME</span>
+                        <span class="tag">BATCH</span>
+                        <span class="tag">CDC</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>LEGACY MODERNIZATION</h3>
+                    <p>Bridge old and new systems through adapters, wrappers, and modern integration patterns without full system replacement.</p>
+                    <div class="feature-tags">
+                        <span class="tag">ADAPTERS</span>
+                        <span class="tag">WRAPPERS</span>
+                        <span class="tag">MIGRATION</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="9" y1="9" x2="15" y2="15"/>
+                            <line x1="15" y1="9" x2="9" y2="15"/>
+                        </svg>
+                    </div>
+                    <h3>WORKFLOW AUTOMATION</h3>
+                    <p>Eliminate manual processes with intelligent automation that connects apps, triggers actions, and orchestrates complex workflows.</p>
+                    <div class="feature-tags">
+                        <span class="tag">RPA</span>
+                        <span class="tag">BPM</span>
+                        <span class="tag">ZAPIER</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>SECURE INTEGRATION</h3>
+                    <p>Enterprise-grade security with encryption, authentication, authorization, and audit trails for all data exchanges.</p>
+                    <div class="feature-tags">
+                        <span class="tag">SSL/TLS</span>
+                        <span class="tag">OAUTH2</span>
+                        <span class="tag">JWT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section class="service-process section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">INTEGRATION_PROTOCOL</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Our <span class="title-gradient">Integration</span> Methodology
+                </h2>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>DISCOVERY & MAPPING</h3>
+                        <p>Comprehensive audit of existing systems, data flows, and integration requirements. We map your current state and design the optimal target architecture.</p>
+                        <div class="step-deliverables">
+                            <span>System Inventory</span>
+                            <span>Data Flow Maps</span>
+                            <span>Integration Architecture</span>
+                        </div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>API & MIDDLEWARE DESIGN</h3>
+                        <p>Design APIs, select middleware platforms, and define integration patterns that meet your scalability and performance needs.</p>
+                        <div class="step-deliverables">
+                            <span>API Specifications</span>
+                            <span>Middleware Configuration</span>
+                            <span>Security Protocols</span>
+                        </div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>DEVELOPMENT & TESTING</h3>
+                        <p>Build integrations with rigorous testing including unit tests, integration tests, and end-to-end validation scenarios.</p>
+                        <div class="step-deliverables">
+                            <span>Integration Development</span>
+                            <span>Quality Assurance</span>
+                            <span>Performance Testing</span>
+                        </div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>DEPLOYMENT & MONITORING</h3>
+                        <p>Phased rollout with continuous monitoring, alerting, and optimization to ensure reliable operation and peak performance.</p>
+                        <div class="step-deliverables">
+                            <span>Production Deployment</span>
+                            <span>Health Monitoring</span>
+                            <span>Ongoing Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BENEFITS ===== -->
+    <section class="service-benefits section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">VALUE_PROPOSITION</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Integration <span class="title-gradient">Benefits</span>
+                </h2>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>OPERATIONAL EFFICIENCY</h3>
+                    <p>Eliminate manual data entry, reduce errors, and accelerate processes with automated workflows and real-time synchronization.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3>UNIFIED DATA VIEW</h3>
+                    <p>Access accurate, consistent information across all systems. Make better decisions with complete visibility into your operations.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔄</div>
+                    <h3>AGILITY & FLEXIBILITY</h3>
+                    <p>Quickly adapt to change by adding or swapping systems without disrupting operations. Scale integrations as you grow.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>COST REDUCTION</h3>
+                    <p>Lower operational costs through automation, reduced manual effort, and maximized ROI from existing technology investments.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>ENHANCED CUSTOMER EXPERIENCE</h3>
+                    <p>Deliver seamless experiences with connected touchpoints, faster response times, and accurate information at every interaction.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔒</div>
+                    <h3>COMPLIANCE & GOVERNANCE</h3>
+                    <p>Ensure data governance, maintain audit trails, and meet regulatory requirements with secure, traceable integration processes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING/PACKAGES ===== -->
+    <section class="service-packages section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">SERVICE_TIERS</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Integration <span class="title-gradient">Packages</span>
+                </h2>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>STARTER</h3>
+                        <div class="package-desc">For basic integrations</div>
+                    </div>
+                    <div class="package-features">
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Up to 5 system integrations</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>RESTful API development</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Basic workflow automation</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Standard support</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Monthly health reports</span>
+                        </div>
+                    </div>
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-outline cyber-btn-full">
+                        <span class="btn-content">REQUEST QUOTE</span>
+                    </a>
+                </div>
+
+                <div class="package-card package-featured">
+                    <div class="package-badge">MOST POPULAR</div>
+                    <div class="package-header">
+                        <h3>BUSINESS</h3>
+                        <div class="package-desc">For growing organizations</div>
+                    </div>
+                    <div class="package-features">
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Up to 15 system integrations</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>ESB/Middleware implementation</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Advanced automation & workflows</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Real-time data sync</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>24/7 monitoring & support</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>API management platform</span>
+                        </div>
+                    </div>
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-primary cyber-btn-full">
+                        <span class="btn-content">REQUEST QUOTE</span>
+                        <span class="btn-glitch"></span>
+                    </a>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>ENTERPRISE</h3>
+                        <div class="package-desc">For complex ecosystems</div>
+                    </div>
+                    <div class="package-features">
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Unlimited integrations</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Custom ESB architecture</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Legacy system modernization</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Multi-cloud integration</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Dedicated integration architect</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>White-glove implementation</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>SLA guarantees</span>
+                        </div>
+                    </div>
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-outline cyber-btn-full">
+                        <span class="btn-content">REQUEST QUOTE</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section id="contact-cta" class="service-cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Connect Your <span class="title-gradient">Systems?</span></h2>
+                <p class="cta-desc">Let's design an integration strategy that transforms how your business operates.</p>
+                
+                <div class="cta-actions">
+                    <a href="index.html#contact" class="cyber-btn cyber-btn-primary cyber-btn-large">
+                        <span class="btn-content">START YOUR PROJECT</span>
+                        <span class="btn-glitch"></span>
+                    </a>
+                    <a href="tel:+27681540303" class="cyber-btn cyber-btn-ghost cyber-btn-large">
+                        <span class="btn-content">CALL: +27 68 154 0303</span>
+                    </a>
+                </div>
+                
+                <div class="cta-info">
+                    <div class="cta-info-item">
+                        <span class="info-icon">📧</span>
+                        <a href="mailto:netthias@ttt-systems.com">netthias@ttt-systems.com</a>
+                    </div>
+                    <div class="cta-info-item">
+                        <span class="info-icon">📍</span>
+                        <span>Randburg, Gauteng, South Africa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RELATED SERVICES ===== -->
+    <section class="related-services section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">EXPLORE_MORE</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Related <span class="title-gradient">Services</span>
+                </h2>
+            </div>
+            
+            <div class="related-grid">
+                <a href="it-infrastructure.html" class="related-card">
+                    <div class="related-number">01</div>
+                    <h3>IT INFRASTRUCTURE</h3>
+                    <p>Enterprise-grade infrastructure solutions</p>
+                    <div class="related-arrow">→</div>
+                </a>
+                
+                <a href="cloud-services.html" class="related-card">
+                    <div class="related-number">05</div>
+                    <h3>CLOUD SERVICES</h3>
+                    <p>Hybrid and multi-cloud strategies</p>
+                    <div class="related-arrow">→</div>
+                </a>
+                
+                <a href="cybersecurity.html" class="related-card">
+                    <div class="related-number">04</div>
+                    <h3>CYBERSECURITY</h3>
+                    <p>Secure your integrated ecosystem</p>
+                    <div class="related-arrow">→</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-grid-bg"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="ttt_logo1.jpeg" alt="TTT Systems" class="footer-logo">
+                    <div class="footer-tagline">TRANSFORMING_TECHNOLOGY_TOGETHER</div>
+                    <div class="footer-location">
+                        <span class="loc-icon">📍</span>
+                        Randburg • Gauteng • South Africa
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>NAVIGATE</h4>
+                        <a href="index.html#home">Home</a>
+                        <a href="index.html#about">About</a>
+                        <a href="index.html#services">Services</a>
+                        <a href="index.html#solutions">Solutions</a>
+                        <a href="index.html#contact">Contact</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>SERVICES</h4>
+                        <a href="it-infrastructure.html">Infrastructure</a>
+                        <a href="systems-integration.html">Integration</a>
+                        <a href="cybersecurity.html">Cybersecurity</a>
+                        <a href="cloud-services.html">Cloud</a>
+                        <a href="support-247.html">Support</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>CONNECT</h4>
+                        <a href="mailto:netthias@ttt-systems.com">Email</a>
+                        <a href="tel:+27681540303">+27 68 154 0303</a>
+                        <a href="tel:+27102107093">+27 10 210 7093</a>
+                        <a href="tel:+27118860667">+27 11 886 0667</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-line"></div>
+                <div class="footer-copyright">
+                    <span>© 2025 TTT SYSTEMS</span>
+                    <span class="divider">|</span>
+                    <span>ALL_RIGHTS_RESERVED</span>
+                    <span class="divider">|</span>
+                    <span class="status-indicator">
+                        <span class="status-dot"></span>
+                        SYSTEM_ONLINE
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

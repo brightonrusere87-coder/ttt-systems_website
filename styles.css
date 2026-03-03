@@ -2185,3 +2185,14 @@ ul { list-style: none; }
         align-items: stretch;
     }
 }
+/* Make service cards work as links */
+.service-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.service-card * {
+    pointer-events: none; /* Prevents child elements from interfering */
+}

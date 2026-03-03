@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TTT Systems Network Solutions - High-performance connectivity infrastructure">
+    <title>Network Solutions | TTT Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cyberpunk Background Effects -->
+    <div class="cyber-grid"></div>
+    <div class="scan-line"></div>
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="ttt_logo1.jpeg" alt="TTT Systems Logo">
+                <span class="logo-glitch" data-text="TTT-SYSTEMS">TTT-SYSTEMS</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link">
+                    <span class="nav-text" data-text="HOME">HOME</span>
+                </a></li>
+                <li><a href="index.html#about" class="nav-link">
+                    <span class="nav-text" data-text="ABOUT">ABOUT</span>
+                </a></li>
+                <li><a href="index.html#services" class="nav-link active">
+                    <span class="nav-text" data-text="SERVICES">SERVICES</span>
+                </a></li>
+                <li><a href="index.html#solutions" class="nav-link">
+                    <span class="nav-text" data-text="SOLUTIONS">SOLUTIONS</span>
+                </a></li>
+                <li><a href="index.html#contact" class="nav-link nav-cta">
+                    <span class="nav-text">CONNECT</span>
+                    <span class="cta-glow"></span>
+                </a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== SERVICE HERO ===== -->
+    <section class="service-hero">
+        <div class="hero-circuit"></div>
+        <div class="hero-hologram"></div>
+        
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">HOME</a>
+                <span class="breadcrumb-sep">/</span>
+                <a href="index.html#services">SERVICES</a>
+                <span class="breadcrumb-sep">/</span>
+                <span class="breadcrumb-current">NETWORK SOLUTIONS</span>
+            </div>
+            
+            <div class="service-hero-content">
+                <div class="service-badge">
+                    <span class="badge-icon">⚡</span>
+                    <span class="badge-text">SERVICE_MODULE_03</span>
+                </div>
+                
+                <h1 class="service-hero-title">
+                    <span class="title-line">NETWORK</span>
+                    <span class="title-line title-accent">SOLUTIONS</span>
+                </h1>
+                
+                <p class="service-hero-desc">
+                    High-velocity network infrastructure delivering ultra-low latency, maximum throughput, and rock-solid reliability. We build networks that power digital transformation.
+                </p>
+                
+                <div class="service-hero-stats">
+                    <div class="hero-stat-item">
+                        <div class="stat-value">10Gbps+</div>
+                        <div class="stat-label">BANDWIDTH</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="stat-value">&lt;5ms</div>
+                        <div class="stat-label">LATENCY</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="stat-value">99.99%</div>
+                        <div class="stat-label">AVAILABILITY</div>
+                    </div>
+                </div>
+                
+                <div class="service-hero-actions">
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-primary">
+                        <span class="btn-content">REQUEST CONSULTATION</span>
+                        <span class="btn-glitch"></span>
+                    </a>
+                    <a href="#features" class="cyber-btn cyber-btn-ghost">
+                        <span class="btn-content">EXPLORE CAPABILITIES</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OVERVIEW ===== -->
+    <section class="service-overview section">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <div class="section-label">
+                        <span class="label-bracket">[</span>
+                        <span class="label-text">WHAT_WE_DELIVER</span>
+                        <span class="label-bracket">]</span>
+                    </div>
+                    <h2 class="section-title">
+                        Building the <span class="title-gradient">Digital Highway</span>
+                    </h2>
+                    <p class="overview-text">
+                        Your network is the circulatory system of your organization. Every application, every user, every transaction depends on fast, reliable connectivity. TTT Systems designs and deploys enterprise network infrastructure that eliminates bottlenecks and maximizes performance.
+                    </p>
+                    <p class="overview-text">
+                        From LAN to WAN to wireless, we architect networks using industry-leading technologies from Cisco, Juniper, and Aruba. Whether you're connecting offices, enabling remote work, or supporting bandwidth-intensive applications, we build networks that scale with your ambitions.
+                    </p>
+                    
+                    <div class="overview-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <div class="highlight-text">Enterprise LAN/WAN design and deployment</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <div class="highlight-text">SD-WAN and MPLS optimization</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <div class="highlight-text">Wireless infrastructure (WiFi 6/6E)</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <div class="highlight-text">Network security and segmentation</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-visual">
+                    <div class="tech-stack-card">
+                        <div class="tech-header">NETWORK_STACK</div>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <span class="tech-label">SWITCHING:</span>
+                                <span class="tech-value">Cisco Catalyst • Juniper EX</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">ROUTING:</span>
+                                <span class="tech-value">Cisco ASR • Juniper MX</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">WIRELESS:</span>
+                                <span class="tech-value">Aruba • Cisco Meraki</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">SD-WAN:</span>
+                                <span class="tech-value">Cisco Viptela • VMware VeloCloud</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">FIREWALL:</span>
+                                <span class="tech-value">Palo Alto • Fortinet • pfSense</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">MONITORING:</span>
+                                <span class="tech-value">SolarWinds • PRTG • Nagios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== KEY FEATURES ===== -->
+    <section id="features" class="service-features section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">CORE_CAPABILITIES</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Network <span class="title-gradient">Services</span>
+                </h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                            <line x1="6" y1="6" x2="6.01" y2="6"/>
+                            <line x1="6" y1="18" x2="6.01" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3>LAN INFRASTRUCTURE</h3>
+                    <p>High-speed local area networks with enterprise switching, VLANs, and QoS for optimal performance and traffic management.</p>
+                    <div class="feature-tags">
+                        <span class="tag">LAYER-2/3</span>
+                        <span class="tag">VLAN</span>
+                        <span class="tag">POE</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <h3>WAN CONNECTIVITY</h3>
+                    <p>Wide area networks connecting multiple sites with MPLS, dark fiber, or internet VPN for secure, reliable inter-office communication.</p>
+                    <div class="feature-tags">
+                        <span class="tag">MPLS</span>
+                        <span class="tag">VPN</span>
+                        <span class="tag">FIBER</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                            <line x1="12" y1="20" x2="12.01" y2="20"/>
+                        </svg>
+                    </div>
+                    <h3>WIRELESS SOLUTIONS</h3>
+                    <p>Enterprise WiFi 6/6E deployments with seamless roaming, guest access, and comprehensive coverage for mobile workforce enablement.</p>
+                    <div class="feature-tags">
+                        <span class="tag">WIFI-6E</span>
+                        <span class="tag">MESH</span>
+                        <span class="tag">RADIUS</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 7l4-4 4 4"/>
+                            <path d="M8 3v12"/>
+                            <path d="M16 17l4 4 4-4"/>
+                            <path d="M20 21V9"/>
+                        </svg>
+                    </div>
+                    <h3>SD-WAN DEPLOYMENT</h3>
+                    <p>Software-defined WAN for intelligent traffic routing, bandwidth optimization, and seamless failover across multiple transport links.</p>
+                    <div class="feature-tags">
+                        <span class="tag">INTELLIGENT</span>
+                        <span class="tag">FAILOVER</span>
+                        <span class="tag">OPTIMIZED</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>NETWORK SECURITY</h3>
+                    <p>Multi-layered security with next-gen firewalls, IDS/IPS, network segmentation, and zero-trust architecture implementation.</p>
+                    <div class="feature-tags">
+                        <span class="tag">NGFW</span>
+                        <span class="tag">IDS/IPS</span>
+                        <span class="tag">ZERO-TRUST</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3>NETWORK MONITORING</h3>
+                    <p>24/7 monitoring with real-time visibility, performance analytics, and proactive alerting to prevent issues before impact.</p>
+                    <div class="feature-tags">
+                        <span class="tag">SNMP</span>
+                        <span class="tag">NETFLOW</span>
+                        <span class="tag">ALERTS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section class="service-process section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">DEPLOYMENT_PROTOCOL</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Our <span class="title-gradient">Network</span> Implementation
+                </h2>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>SITE SURVEY & DESIGN</h3>
+                        <p>Comprehensive assessment of your facilities, bandwidth requirements, and network topology. We design for current needs and future growth.</p>
+                        <div class="step-deliverables">
+                            <span>Site Surveys</span>
+                            <span>Network Diagrams</span>
+                            <span>Capacity Planning</span>
+                        </div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>EQUIPMENT & INSTALLATION</h3>
+                        <p>Procurement of enterprise-grade hardware followed by professional installation, cabling, and rack configuration.</p>
+                        <div class="step-deliverables">
+                            <span>Hardware Procurement</span>
+                            <span>Structured Cabling</span>
+                            <span>Equipment Installation</span>
+                        </div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>CONFIGURATION & TESTING</h3>
+                        <p>Device configuration, security hardening, and comprehensive testing including load tests and failover scenarios.</p>
+                        <div class="step-deliverables">
+                            <span>Device Configuration</span>
+                            <span>Security Hardening</span>
+                            <span>Performance Testing</span>
+                        </div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>OPTIMIZATION & SUPPORT</h3>
+                        <p>Continuous monitoring, performance optimization, and 24/7 support ensuring your network delivers peak performance.</p>
+                        <div class="step-deliverables">
+                            <span>Performance Tuning</span>
+                            <span>24/7 Monitoring</span>
+                            <span>Ongoing Maintenance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BENEFITS ===== -->
+    <section class="service-benefits section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">VALUE_PROPOSITION</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Network <span class="title-gradient">Advantages</span>
+                </h2>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>BLAZING PERFORMANCE</h3>
+                    <p>Low-latency, high-throughput networks optimized for your applications. Eliminate bottlenecks and maximize productivity.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔒</div>
+                    <h3>SECURE BY DESIGN</h3>
+                    <p>Multi-layered security with firewall, IDS/IPS, segmentation, and access controls protecting every layer of your network.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📈</div>
+                    <h3>SCALABLE ARCHITECTURE</h3>
+                    <p>Networks designed to grow with your business. Add users, sites, and services without major overhauls.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>HIGH AVAILABILITY</h3>
+                    <p>Redundant paths, automatic failover, and 99.99% uptime SLAs ensure business continuity even during failures.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3>COMPLETE VISIBILITY</h3>
+                    <p>Real-time dashboards showing network health, bandwidth utilization, and performance metrics across your entire infrastructure.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>COST EFFICIENCY</h3>
+                    <p>Optimize bandwidth costs with SD-WAN, reduce downtime with proactive monitoring, and maximize ROI from network investments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING/PACKAGES ===== -->
+    <section class="service-packages section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">SERVICE_TIERS</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Network <span class="title-gradient">Packages</span>
+                </h2>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>FOUNDATION</h3>
+                        <div class="package-desc">For small offices</div>
+                    </div>
+                    <div class="package-features">
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Basic LAN infrastructure</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Managed switches & routers</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>WiFi deployment</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Firewall protection</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Business hours support</span>
+                        </div>
+                    </div>
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-outline cyber-btn-full">
+                        <span class="btn-content">REQUEST QUOTE</span>
+                    </a>
+                </div>
+
+                <div class="package-card package-featured">
+                    <div class="package-badge">MOST POPULAR</div>
+                    <div class="package-header">
+                        <h3>ADVANCED</h3>
+                        <div class="package-desc">For growing businesses</div>
+                    </div>
+                    <div class="package-features">
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Enterprise LAN/WAN</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>SD-WAN implementation</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>WiFi 6 deployment</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Next-gen firewall</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>24/7 monitoring & support</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Network redundancy</span>
+                        </div>
+                    </div>
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-primary cyber-btn-full">
+                        <span class="btn-content">REQUEST QUOTE</span>
+                        <span class="btn-glitch"></span>
+                    </a>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>ENTERPRISE</h3>
+                        <div class="package-desc">For large organizations</div>
+                    </div>
+                    <div class="package-features">
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Multi-site network design</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Custom SD-WAN architecture</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Carrier-grade equipment</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Zero-trust security model</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Dedicated network engineer</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>99.99% uptime SLA</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>White-glove implementation</span>
+                        </div>
+                    </div>
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-outline cyber-btn-full">
+                        <span class="btn-content">REQUEST QUOTE</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section id="contact-cta" class="service-cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Upgrade Your <span class="title-gradient">Network?</span></h2>
+                <p class="cta-desc">Let's design a network infrastructure that powers your digital future.</p>
+                
+                <div class="cta-actions">
+                    <a href="index.html#contact" class="cyber-btn cyber-btn-primary cyber-btn-large">
+                        <span class="btn-content">START YOUR PROJECT</span>
+                        <span class="btn-glitch"></span>
+                    </a>
+                    <a href="tel:+27681540303" class="cyber-btn cyber-btn-ghost cyber-btn-large">
+                        <span class="btn-content">CALL: +27 68 154 0303</span>
+                    </a>
+                </div>
+                
+                <div class="cta-info">
+                    <div class="cta-info-item">
+                        <span class="info-icon">📧</span>
+                        <a href="mailto:netthias@ttt-systems.com">netthias@ttt-systems.com</a>
+                    </div>
+                    <div class="cta-info-item">
+                        <span class="info-icon">📍</span>
+                        <span>Randburg, Gauteng, South Africa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RELATED SERVICES ===== -->
+    <section class="related-services section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">EXPLORE_MORE</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Related <span class="title-gradient">Services</span>
+                </h2>
+            </div>
+            
+            <div class="related-grid">
+                <a href="it-infrastructure.html" class="related-card">
+                    <div class="related-number">01</div>
+                    <h3>IT INFRASTRUCTURE</h3>
+                    <p>Enterprise-grade infrastructure solutions</p>
+                    <div class="related-arrow">→</div>
+                </a>
+                
+                <a href="cybersecurity.html" class="related-card">
+                    <div class="related-number">04</div>
+                    <h3>CYBERSECURITY</h3>
+                    <p>Secure your network infrastructure</p>
+                    <div class="related-arrow">→</div>
+                </a>
+                
+                <a href="support-247.html" class="related-card">
+                    <div class="related-number">06</div>
+                    <h3>24/7 SUPPORT</h3>
+                    <p>Round-the-clock network monitoring</p>
+                    <div class="related-arrow">→</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-grid-bg"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="ttt_logo1.jpeg" alt="TTT Systems" class="footer-logo">
+                    <div class="footer-tagline">TRANSFORMING_TECHNOLOGY_TOGETHER</div>
+                    <div class="footer-location">
+                        <span class="loc-icon">📍</span>
+                        Randburg • Gauteng • South Africa
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>NAVIGATE</h4>
+                        <a href="index.html#home">Home</a>
+                        <a href="index.html#about">About</a>
+                        <a href="index.html#services">Services</a>
+                        <a href="index.html#solutions">Solutions</a>
+                        <a href="index.html#contact">Contact</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>SERVICES</h4>
+                        <a href="it-infrastructure.html">Infrastructure</a>
+                        <a href="systems-integration.html">Integration</a>
+                        <a href="cybersecurity.html">Cybersecurity</a>
+                        <a href="cloud-services.html">Cloud</a>
+                        <a href="support-247.html">Support</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>CONNECT</h4>
+                        <a href="mailto:netthias@ttt-systems.com">Email</a>
+                        <a href="tel:+27681540303">+27 68 154 0303</a>
+                        <a href="tel:+27102107093">+27 10 210 7093</a>
+                        <a href="tel:+27118860667">+27 11 886 0667</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-line"></div>
+                <div class="footer-copyright">
+                    <span>© 2025 TTT SYSTEMS</span>
+                    <span class="divider">|</span>
+                    <span>ALL_RIGHTS_RESERVED</span>
+                    <span class="divider">|</span>
+                    <span class="status-indicator">
+                        <span class="status-dot"></span>
+                        SYSTEM_ONLINE
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

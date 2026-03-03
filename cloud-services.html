@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Services | TTT Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cyber-grid"></div><div class="scan-line"></div><canvas id="particleCanvas"></canvas>
+    <div class="cursor-dot"></div><div class="cursor-ring"></div>
+    
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="ttt_logo1.jpeg" alt="TTT Systems Logo">
+                <span class="logo-glitch" data-text="TTT-SYSTEMS">TTT-SYSTEMS</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link"><span class="nav-text">HOME</span></a></li>
+                <li><a href="index.html#about" class="nav-link"><span class="nav-text">ABOUT</span></a></li>
+                <li><a href="index.html#services" class="nav-link active"><span class="nav-text">SERVICES</span></a></li>
+                <li><a href="index.html#solutions" class="nav-link"><span class="nav-text">SOLUTIONS</span></a></li>
+                <li><a href="index.html#contact" class="nav-link nav-cta"><span class="nav-text">CONNECT</span><span class="cta-glow"></span></a></li>
+            </ul>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="service-hero">
+        <div class="hero-circuit"></div><div class="hero-hologram"></div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">HOME</a><span class="breadcrumb-sep">/</span>
+                <a href="index.html#services">SERVICES</a><span class="breadcrumb-sep">/</span>
+                <span class="breadcrumb-current">CLOUD SERVICES</span>
+            </div>
+            <div class="service-hero-content">
+                <div class="service-badge"><span class="badge-icon">⚡</span><span class="badge-text">SERVICE_MODULE_05</span></div>
+                <h1 class="service-hero-title">
+                    <span class="title-line">CLOUD</span>
+                    <span class="title-line title-accent">SERVICES</span>
+                </h1>
+                <p class="service-hero-desc">Hybrid and multi-cloud strategies engineered for agility, resilience, and cost optimization. We architect, migrate, and manage cloud infrastructure that scales with your ambitions.</p>
+                <div class="service-hero-stats">
+                    <div class="hero-stat-item"><div class="stat-value">40%</div><div class="stat-label">COST_SAVINGS</div></div>
+                    <div class="hero-stat-item"><div class="stat-value">99.95%</div><div class="stat-label">UPTIME_SLA</div></div>
+                    <div class="hero-stat-item"><div class="stat-value">10x</div><div class="stat-label">FASTER_DEPLOY</div></div>
+                </div>
+                <div class="service-hero-actions">
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-primary"><span class="btn-content">REQUEST CLOUD ASSESSMENT</span><span class="btn-glitch"></span></a>
+                    <a href="#features" class="cyber-btn cyber-btn-ghost"><span class="btn-content">EXPLORE CAPABILITIES</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-overview section">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <div class="section-label"><span class="label-bracket">[</span><span class="label-text">WHAT_WE_DELIVER</span><span class="label-bracket">]</span></div>
+                    <h2 class="section-title">Unlock the Power of <span class="title-gradient">Cloud Computing</span></h2>
+                    <p class="overview-text">The cloud offers unprecedented agility, scalability, and innovation potential—but only when architected correctly. TTT Systems brings deep expertise across AWS, Azure, and Google Cloud to design cloud solutions aligned with your business goals.</p>
+                    <p class="overview-text">From lift-and-shift migrations to cloud-native application development, from cost optimization to multi-cloud management, we guide you through every stage of your cloud journey.</p>
+                    <div class="overview-highlights">
+                        <div class="highlight-item"><div class="highlight-icon">✓</div><div class="highlight-text">Cloud migration & modernization</div></div>
+                        <div class="highlight-item"><div class="highlight-icon">✓</div><div class="highlight-text">AWS, Azure & GCP architecture</div></div>
+                        <div class="highlight-item"><div class="highlight-icon">✓</div><div class="highlight-text">DevOps & infrastructure-as-code</div></div>
+                        <div class="highlight-item"><div class="highlight-icon">✓</div><div class="highlight-text">Cloud cost optimization & FinOps</div></div>
+                    </div>
+                </div>
+                <div class="overview-visual">
+                    <div class="tech-stack-card">
+                        <div class="tech-header">CLOUD_STACK</div>
+                        <div class="tech-items">
+                            <div class="tech-item"><span class="tech-label">PLATFORMS:</span><span class="tech-value">AWS • Azure • GCP</span></div>
+                            <div class="tech-item"><span class="tech-label">CONTAINERS:</span><span class="tech-value">Docker • Kubernetes • ECS</span></div>
+                            <div class="tech-item"><span class="tech-label">IaC:</span><span class="tech-value">Terraform • CloudFormation</span></div>
+                            <div class="tech-item"><span class="tech-label">CI/CD:</span><span class="tech-value">Jenkins • GitLab • GitHub Actions</span></div>
+                            <div class="tech-item"><span class="tech-label">MONITORING:</span><span class="tech-value">CloudWatch • Datadog • New Relic</span></div>
+                            <div class="tech-item"><span class="tech-label">SERVERLESS:</span><span class="tech-value">Lambda • Azure Functions</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="service-features section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label"><span class="label-bracket">[</span><span class="label-text">CORE_CAPABILITIES</span><span class="label-bracket">]</span></div>
+                <h2 class="section-title">Cloud <span class="title-gradient">Services</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
+                    <h3>CLOUD MIGRATION</h3>
+                    <p>Seamless migration from on-premise to cloud with minimal disruption. We handle assessment, planning, execution, and validation.</p>
+                    <div class="feature-tags"><span class="tag">LIFT-SHIFT</span><span class="tag">REPLATFORM</span><span class="tag">REFACTOR</span></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+                    <h3>CLOUD ARCHITECTURE</h3>
+                    <p>Well-architected cloud solutions following best practices for security, reliability, performance, and cost.</p>
+                    <div class="feature-tags"><span class="tag">AWS</span><span class="tag">AZURE</span><span class="tag">GCP</span></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+                    <h3>CONTAINERIZATION</h3>
+                    <p>Docker and Kubernetes implementations for portable, scalable application deployment across any cloud.</p>
+                    <div class="feature-tags"><span class="tag">DOCKER</span><span class="tag">K8S</span><span class="tag">EKS/AKS</span></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                    <h3>DevOps & CI/CD</h3>
+                    <p>Automated pipelines accelerating development, testing, and deployment while maintaining quality and security.</p>
+                    <div class="feature-tags"><span class="tag">JENKINS</span><span class="tag">GITLAB</span><span class="tag">TERRAFORM</span></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
+                    <h3>CLOUD BACKUP & DR</h3>
+                    <p>Cloud-based backup and disaster recovery ensuring business continuity with rapid recovery objectives.</p>
+                    <div class="feature-tags"><span class="tag">BACKUP</span><span class="tag">DR</span><span class="tag">REPLICATION</span></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+                    <h3>COST OPTIMIZATION</h3>
+                    <p>Continuous monitoring and optimization reducing cloud spend by 30-50% without impacting performance.</p>
+                    <div class="feature-tags"><span class="tag">FINOPS</span><span class="tag">RIGHTSIZING</span><span class="tag">RESERVED</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-process section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label"><span class="label-bracket">[</span><span class="label-text">CLOUD_PROTOCOL</span><span class="label-bracket">]</span></div>
+                <h2 class="section-title">Our <span class="title-gradient">Cloud</span> Journey</h2>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>ASSESSMENT & STRATEGY</h3>
+                        <p>Evaluate current infrastructure, applications, and workloads to define the optimal cloud strategy.</p>
+                        <div class="step-deliverables"><span>Cloud Readiness</span><span>TCO Analysis</span><span>Migration Roadmap</span></div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>DESIGN & ARCHITECTURE</h3>
+                        <p>Design cloud architecture following best practices for security, scalability, and cost-efficiency.</p>
+                        <div class="step-deliverables"><span>Architecture Design</span><span>Security Framework</span><span>Cost Modeling</span></div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>MIGRATION & DEPLOYMENT</h3>
+                        <p>Execute migration with minimal downtime using proven methodologies and automated tools.</p>
+                        <div class="step-deliverables"><span>Data Migration</span><span>Application Deploy</span><span>Testing & Cutover</span></div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>OPTIMIZATION & MANAGEMENT</h3>
+                        <p>Continuous monitoring, cost optimization, and management ensuring peak cloud performance.</p>
+                        <div class="step-deliverables"><span>Performance Tuning</span><span>Cost Optimization</span><span>24/7 Management</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-benefits section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label"><span class="label-bracket">[</span><span class="label-text">VALUE_PROPOSITION</span><span class="label-bracket">]</span></div>
+                <h2 class="section-title">Cloud <span class="title-gradient">Advantages</span></h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card"><div class="benefit-icon">⚡</div><h3>RAPID SCALABILITY</h3><p>Scale resources up or down instantly based on demand without capital expenditure or long procurement cycles.</p></div>
+                <div class="benefit-card"><div class="benefit-icon">💰</div><h3>COST EFFICIENCY</h3><p>Pay only for what you use. Eliminate hardware refresh cycles, reduce energy costs, and optimize spending continuously.</p></div>
+                <div class="benefit-card"><div class="benefit-icon">🚀</div><h3>FASTER INNOVATION</h3><p>Deploy applications in minutes not months. Experiment with new technologies without major upfront investment.</p></div>
+                <div class="benefit-card"><div class="benefit-icon">🌍</div><h3>GLOBAL REACH</h3><p>Deploy applications closer to users worldwide for better performance and user experience.</p></div>
+                <div class="benefit-card"><div class="benefit-icon">🛡️</div><h3>ENHANCED SECURITY</h3><p>Leverage cloud provider security investments with enterprise-grade protection and compliance certifications.</p></div>
+                <div class="benefit-card"><div class="benefit-icon">♻️</div><h3>BUSINESS CONTINUITY</h3><p>Built-in redundancy, automated backups, and disaster recovery capabilities ensure always-on availability.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-packages section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label"><span class="label-bracket">[</span><span class="label-text">SERVICE_TIERS</span><span class="label-bracket">]</span></div>
+                <h2 class="section-title">Cloud <span class="title-gradient">Packages</span></h2>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header"><h3>STARTER</h3><div class="package-desc">Cloud basics</div></div>
+                    <div class="package-features">
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Single cloud platform</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Basic migration support</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Infrastructure setup</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Monthly reporting</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Business hours support</span></div>
+                    </div>
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-outline cyber-btn-full"><span class="btn-content">REQUEST QUOTE</span></a>
+                </div>
+                <div class="package-card package-featured">
+                    <div class="package-badge">MOST POPULAR</div>
+                    <div class="package-header"><h3>PROFESSIONAL</h3><div class="package-desc">Full cloud services</div></div>
+                    <div class="package-features">
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Multi-cloud support</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Complete migration</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>DevOps & CI/CD</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Cost optimization</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>24/7 management</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Performance monitoring</span></div>
+                    </div>
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-primary cyber-btn-full"><span class="btn-content">REQUEST QUOTE</span><span class="btn-glitch"></span></a>
+                </div>
+                <div class="package-card">
+                    <div class="package-header"><h3>ENTERPRISE</h3><div class="package-desc">Maximum cloud power</div></div>
+                    <div class="package-features">
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Hybrid/multi-cloud architecture</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Cloud-native development</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Advanced automation</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>FinOps & governance</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Dedicated cloud architect</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>White-glove service</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>SLA guarantees</span></div>
+                    </div>
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-outline cyber-btn-full"><span class="btn-content">REQUEST QUOTE</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-cta" class="service-cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Accelerate with <span class="title-gradient">Cloud?</span></h2>
+                <p class="cta-desc">Let's design a cloud strategy that transforms your business capabilities.</p>
+                <div class="cta-actions">
+                    <a href="index.html#contact" class="cyber-btn cyber-btn-primary cyber-btn-large"><span class="btn-content">START CLOUD JOURNEY</span><span class="btn-glitch"></span></a>
+                    <a href="tel:+27681540303" class="cyber-btn cyber-btn-ghost cyber-btn-large"><span class="btn-content">CALL: +27 68 154 0303</span></a>
+                </div>
+                <div class="cta-info">
+                    <div class="cta-info-item"><span class="info-icon">📧</span><a href="mailto:netthias@ttt-systems.com">netthias@ttt-systems.com</a></div>
+                    <div class="cta-info-item"><span class="info-icon">📍</span><span>Randburg, Gauteng, South Africa</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-services section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label"><span class="label-bracket">[</span><span class="label-text">EXPLORE_MORE</span><span class="label-bracket">]</span></div>
+                <h2 class="section-title">Related <span class="title-gradient">Services</span></h2>
+            </div>
+            <div class="related-grid">
+                <a href="it-infrastructure.html" class="related-card"><div class="related-number">01</div><h3>IT INFRASTRUCTURE</h3><p>Hybrid cloud infrastructure</p><div class="related-arrow">→</div></a>
+                <a href="cybersecurity.html" class="related-card"><div class="related-number">04</div><h3>CYBERSECURITY</h3><p>Cloud security & compliance</p><div class="related-arrow">→</div></a>
+                <a href="support-247.html" class="related-card"><div class="related-number">06</div><h3>24/7 SUPPORT</h3><p>Cloud monitoring & management</p><div class="related-arrow">→</div></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid-bg"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="ttt_logo1.jpeg" alt="TTT Systems" class="footer-logo">
+                    <div class="footer-tagline">TRANSFORMING_TECHNOLOGY_TOGETHER</div>
+                    <div class="footer-location"><span class="loc-icon">📍</span>Randburg • Gauteng • South Africa</div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col"><h4>NAVIGATE</h4><a href="index.html#home">Home</a><a href="index.html#about">About</a><a href="index.html#services">Services</a><a href="index.html#solutions">Solutions</a><a href="index.html#contact">Contact</a></div>
+                    <div class="footer-col"><h4>SERVICES</h4><a href="it-infrastructure.html">Infrastructure</a><a href="systems-integration.html">Integration</a><a href="cybersecurity.html">Cybersecurity</a><a href="cloud-services.html">Cloud</a><a href="support-247.html">Support</a></div>
+                    <div class="footer-col"><h4>CONNECT</h4><a href="mailto:netthias@ttt-systems.com">Email</a><a href="tel:+27681540303">+27 68 154 0303</a><a href="tel:+27102107093">+27 10 210 7093</a><a href="tel:+27118860667">+27 11 886 0667</a></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-line"></div>
+                <div class="footer-copyright"><span>© 2025 TTT SYSTEMS</span><span class="divider">|</span><span>ALL_RIGHTS_RESERVED</span><span class="divider">|</span><span class="status-indicator"><span class="status-dot"></span>SYSTEM_ONLINE</span></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

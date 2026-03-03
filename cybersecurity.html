@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TTT Systems Cybersecurity Services - Multi-layered defense protecting your digital assets">
+    <title>Cybersecurity | TTT Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    <div class="scan-line"></div>
+    <canvas id="particleCanvas"></canvas>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="ttt_logo1.jpeg" alt="TTT Systems Logo">
+                <span class="logo-glitch" data-text="TTT-SYSTEMS">TTT-SYSTEMS</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link"><span class="nav-text">HOME</span></a></li>
+                <li><a href="index.html#about" class="nav-link"><span class="nav-text">ABOUT</span></a></li>
+                <li><a href="index.html#services" class="nav-link active"><span class="nav-text">SERVICES</span></a></li>
+                <li><a href="index.html#solutions" class="nav-link"><span class="nav-text">SOLUTIONS</span></a></li>
+                <li><a href="index.html#contact" class="nav-link nav-cta"><span class="nav-text">CONNECT</span><span class="cta-glow"></span></a></li>
+            </ul>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="service-hero">
+        <div class="hero-circuit"></div>
+        <div class="hero-hologram"></div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">HOME</a><span class="breadcrumb-sep">/</span>
+                <a href="index.html#services">SERVICES</a><span class="breadcrumb-sep">/</span>
+                <span class="breadcrumb-current">CYBERSECURITY</span>
+            </div>
+            <div class="service-hero-content">
+                <div class="service-badge"><span class="badge-icon">⚡</span><span class="badge-text">SERVICE_MODULE_04</span></div>
+                <h1 class="service-hero-title">
+                    <span class="title-line">CYBER</span>
+                    <span class="title-line title-accent">SECURITY</span>
+                </h1>
+                <p class="service-hero-desc">Multi-layered defense systems protecting your digital assets against advanced persistent threats, ransomware, and zero-day exploits. We secure your perimeter, endpoints, and everything in between.</p>
+                <div class="service-hero-stats">
+                    <div class="hero-stat-item"><div class="stat-value">99.97%</div><div class="stat-label">THREAT_BLOCKED</div></div>
+                    <div class="hero-stat-item"><div class="stat-value">&lt;60sec</div><div class="stat-label">RESPONSE_TIME</div></div>
+                    <div class="hero-stat-item"><div class="stat-value">24/7/365</div><div class="stat-label">SOC_MONITORING</div></div>
+                </div>
+                <div class="service-hero-actions">
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-primary"><span class="btn-content">REQUEST SECURITY AUDIT</span><span class="btn-glitch"></span></a>
+                    <a href="#features" class="cyber-btn cyber-btn-ghost"><span class="btn-content">EXPLORE CAPABILITIES</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-overview section">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <div class="section-label"><span class="label-bracket">[</span><span class="label-text">WHAT_WE_DELIVER</span><span class="label-bracket">]</span></div>
+                    <h2 class="section-title">Fortress-Level <span class="title-gradient">Digital Protection</span></h2>
+                    <p class="overview-text">Cyber threats evolve daily. Ransomware, phishing, APTs, insider threats—attackers are sophisticated and relentless. TTT Systems deploys defense-in-depth strategies combining next-generation technology, threat intelligence, and 24/7 monitoring to keep you protected.</p>
+                    <p class="overview-text">From endpoint protection to network segmentation, from SIEM to incident response, we build comprehensive security programs aligned with frameworks like NIST, ISO 27001, and CIS Controls.</p>
+                    <div class="overview-highlights">
+                        <div class="highlight-item"><div class="highlight-icon">✓</div><div class="highlight-text">Next-gen firewall & IDS/IPS</div></div>
+                        <div class="highlight-item"><div class="highlight-icon">✓</div><div class="highlight-text">Endpoint detection & response (EDR)</div></div>
+                        <div class="highlight-item"><div class="highlight-icon">✓</div><div class="highlight-text">Security Operations Center (SOC)</div></div>
+                        <div class="highlight-item"><div class="highlight-icon">✓</div><div class="highlight-text">Vulnerability management & penetration testing</div></div>
+                    </div>
+                </div>
+                <div class="overview-visual">
+                    <div class="tech-stack-card">
+                        <div class="tech-header">SECURITY_STACK</div>
+                        <div class="tech-items">
+                            <div class="tech-item"><span class="tech-label">FIREWALL:</span><span class="tech-value">Palo Alto • Fortinet • Checkpoint</span></div>
+                            <div class="tech-item"><span class="tech-label">EDR/XDR:</span><span class="tech-value">CrowdStrike • SentinelOne</span></div>
+                            <div class="tech-item"><span class="tech-label">SIEM:</span><span class="tech-value">Splunk • QRadar • Elastic</span></div>
+                            <div class="tech-item"><span class="tech-label">EMAIL_SEC:</span><span class="tech-value">Proofpoint • Mimecast</span></div>
+                            <div class="tech-item"><span class="tech-label">IAM:</span><span class="tech-value">Okta • Azure AD • Duo</span></div>
+                            <div class="tech-item"><span class="tech-label">VULN_SCAN:</span><span class="tech-value">Tenable • Qualys • Nessus</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="service-features section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label"><span class="label-bracket">[</span><span class="label-text">CORE_CAPABILITIES</span><span class="label-bracket">]</span></div>
+                <h2 class="section-title">Security <span class="title-gradient">Arsenal</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                    <h3>PERIMETER DEFENSE</h3>
+                    <p>Next-gen firewalls with deep packet inspection, threat prevention, and application control stopping threats at the gate.</p>
+                    <div class="feature-tags"><span class="tag">NGFW</span><span class="tag">IPS</span><span class="tag">WAF</span></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                    <h3>ENDPOINT PROTECTION</h3>
+                    <p>Advanced EDR/XDR solutions with AI-powered threat detection, behavioral analysis, and automated response.</p>
+                    <div class="feature-tags"><span class="tag">EDR</span><span class="tag">XDR</span><span class="tag">ANTIVIRUS</span></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+                    <h3>24/7 SOC MONITORING</h3>
+                    <p>Security Operations Center with expert analysts monitoring threats, investigating incidents, and coordinating response.</p>
+                    <div class="feature-tags"><span class="tag">SOC</span><span class="tag">SIEM</span><span class="tag">ALERTS</span></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg></div>
+                    <h3>IDENTITY & ACCESS</h3>
+                    <p>Multi-factor authentication, single sign-on, and zero-trust access control securing user identities.</p>
+                    <div class="feature-tags"><span class="tag">MFA</span><span class="tag">SSO</span><span class="tag">ZERO-TRUST</span></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                    <h3>EMAIL & WEB SECURITY</h3>
+                    <p>Advanced filtering stopping phishing, malware, and spam before they reach inboxes. Secure web gateway blocking malicious sites.</p>
+                    <div class="feature-tags"><span class="tag">ANTI-PHISH</span><span class="tag">SWG</span><span class="tag">DLP</span></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+                    <h3>VULNERABILITY MANAGEMENT</h3>
+                    <p>Continuous scanning, risk assessment, and remediation guidance keeping your systems patched and hardened.</p>
+                    <div class="feature-tags"><span class="tag">SCANNING</span><span class="tag">PATCHING</span><span class="tag">PENTEST</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-process section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label"><span class="label-bracket">[</span><span class="label-text">SECURITY_PROTOCOL</span><span class="label-bracket">]</span></div>
+                <h2 class="section-title">Our <span class="title-gradient">Security</span> Approach</h2>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>RISK ASSESSMENT</h3>
+                        <p>Comprehensive audit identifying vulnerabilities, threats, and compliance gaps across your environment.</p>
+                        <div class="step-deliverables"><span>Security Audit</span><span>Risk Analysis</span><span>Compliance Review</span></div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>DEFENSE ARCHITECTURE</h3>
+                        <p>Design multi-layered security architecture aligned with industry frameworks and your risk profile.</p>
+                        <div class="step-deliverables"><span>Security Design</span><span>Technology Selection</span><span>Policy Development</span></div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>DEPLOYMENT & HARDENING</h3>
+                        <p>Implement security controls, configure systems, and harden endpoints with least-privilege access.</p>
+                        <div class="step-deliverables"><span>Tool Deployment</span><span>Configuration</span><span>Testing & Validation</span></div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>CONTINUOUS MONITORING</h3>
+                        <p>24/7 SOC monitoring, threat hunting, incident response, and ongoing security posture optimization.</p>
+                        <div class="step-deliverables"><span>SOC Monitoring</span><span>Threat Hunting</span><span>Incident Response</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-benefits section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label"><span class="label-bracket">[</span><span class="label-text">VALUE_PROPOSITION</span><span class="label-bracket">]</span></div>
+                <h2 class="section-title">Security <span class="title-gradient">Benefits</span></h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card"><div class="benefit-icon">🛡️</div><h3>PROACTIVE DEFENSE</h3><p>Stop threats before they cause damage with AI-powered detection, threat intelligence, and rapid response.</p></div>
+                <div class="benefit-card"><div class="benefit-icon">📋</div><h3>COMPLIANCE READY</h3><p>Meet GDPR, HIPAA, PCI-DSS, ISO 27001, and other regulatory requirements with audit-ready documentation.</p></div>
+                <div class="benefit-card"><div class="benefit-icon">💰</div><h3>COST AVOIDANCE</h3><p>Prevent costly breaches, ransomware payments, regulatory fines, and reputational damage.</p></div>
+                <div class="benefit-card"><div class="benefit-icon">🎯</div><h3>EXPERT GUIDANCE</h3><p>Certified security professionals with deep expertise in threat landscape and defense strategies.</p></div>
+                <div class="benefit-card"><div class="benefit-icon">⚡</div><h3>RAPID RESPONSE</h3><p>Incident response team ready to contain and remediate breaches minimizing damage and downtime.</p></div>
+                <div class="benefit-card"><div class="benefit-icon">🔒</div><h3>BUSINESS CONTINUITY</h3><p>Maintain operations even under attack with resilient security architecture and disaster recovery plans.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-packages section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label"><span class="label-bracket">[</span><span class="label-text">SERVICE_TIERS</span><span class="label-bracket">]</span></div>
+                <h2 class="section-title">Security <span class="title-gradient">Packages</span></h2>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header"><h3>ESSENTIAL</h3><div class="package-desc">Basic protection</div></div>
+                    <div class="package-features">
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Firewall & antivirus</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Email security</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Patch management</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Monthly reports</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Business hours support</span></div>
+                    </div>
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-outline cyber-btn-full"><span class="btn-content">REQUEST QUOTE</span></a>
+                </div>
+                <div class="package-card package-featured">
+                    <div class="package-badge">MOST POPULAR</div>
+                    <div class="package-header"><h3>ADVANCED</h3><div class="package-desc">Comprehensive security</div></div>
+                    <div class="package-features">
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Next-gen firewall & IPS</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>EDR/XDR protection</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>SIEM monitoring</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Vulnerability scanning</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>24/7 SOC monitoring</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Incident response</span></div>
+                    </div>
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-primary cyber-btn-full"><span class="btn-content">REQUEST QUOTE</span><span class="btn-glitch"></span></a>
+                </div>
+                <div class="package-card">
+                    <div class="package-header"><h3>ENTERPRISE</h3><div class="package-desc">Maximum protection</div></div>
+                    <div class="package-features">
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Dedicated SOC team</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Threat hunting</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Penetration testing</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Zero-trust architecture</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Compliance management</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Dedicated CISO support</span></div>
+                        <div class="package-feature"><span class="feature-check">✓</span><span>Custom security training</span></div>
+                    </div>
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-outline cyber-btn-full"><span class="btn-content">REQUEST QUOTE</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-cta" class="service-cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Fortify Your <span class="title-gradient">Defenses?</span></h2>
+                <p class="cta-desc">Let's build a security program that protects your business from modern threats.</p>
+                <div class="cta-actions">
+                    <a href="index.html#contact" class="cyber-btn cyber-btn-primary cyber-btn-large"><span class="btn-content">START SECURITY AUDIT</span><span class="btn-glitch"></span></a>
+                    <a href="tel:+27681540303" class="cyber-btn cyber-btn-ghost cyber-btn-large"><span class="btn-content">CALL: +27 68 154 0303</span></a>
+                </div>
+                <div class="cta-info">
+                    <div class="cta-info-item"><span class="info-icon">📧</span><a href="mailto:netthias@ttt-systems.com">netthias@ttt-systems.com</a></div>
+                    <div class="cta-info-item"><span class="info-icon">📍</span><span>Randburg, Gauteng, South Africa</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-services section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label"><span class="label-bracket">[</span><span class="label-text">EXPLORE_MORE</span><span class="label-bracket">]</span></div>
+                <h2 class="section-title">Related <span class="title-gradient">Services</span></h2>
+            </div>
+            <div class="related-grid">
+                <a href="network-solutions.html" class="related-card"><div class="related-number">03</div><h3>NETWORK SOLUTIONS</h3><p>Secure network infrastructure</p><div class="related-arrow">→</div></a>
+                <a href="cloud-services.html" class="related-card"><div class="related-number">05</div><h3>CLOUD SERVICES</h3><p>Cloud security & compliance</p><div class="related-arrow">→</div></a>
+                <a href="support-247.html" class="related-card"><div class="related-number">06</div><h3>24/7 SUPPORT</h3><p>Round-the-clock security monitoring</p><div class="related-arrow">→</div></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid-bg"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="ttt_logo1.jpeg" alt="TTT Systems" class="footer-logo">
+                    <div class="footer-tagline">TRANSFORMING_TECHNOLOGY_TOGETHER</div>
+                    <div class="footer-location"><span class="loc-icon">📍</span>Randburg • Gauteng • South Africa</div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>NAVIGATE</h4>
+                        <a href="index.html#home">Home</a><a href="index.html#about">About</a><a href="index.html#services">Services</a><a href="index.html#solutions">Solutions</a><a href="index.html#contact">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>SERVICES</h4>
+                        <a href="it-infrastructure.html">Infrastructure</a><a href="systems-integration.html">Integration</a><a href="cybersecurity.html">Cybersecurity</a><a href="cloud-services.html">Cloud</a><a href="support-247.html">Support</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>CONNECT</h4>
+                        <a href="mailto:netthias@ttt-systems.com">Email</a><a href="tel:+27681540303">+27 68 154 0303</a><a href="tel:+27102107093">+27 10 210 7093</a><a href="tel:+27118860667">+27 11 886 0667</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-line"></div>
+                <div class="footer-copyright">
+                    <span>© 2025 TTT SYSTEMS</span><span class="divider">|</span><span>ALL_RIGHTS_RESERVED</span><span class="divider">|</span>
+                    <span class="status-indicator"><span class="status-dot"></span>SYSTEM_ONLINE</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
