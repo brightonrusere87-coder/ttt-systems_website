@@ -1,0 +1,689 @@
+
+It infrastructure · HTML
+Copy
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TTT Systems IT Infrastructure Services - Enterprise-grade infrastructure design, deployment and management">
+    <title>IT Infrastructure | TTT Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cyberpunk Background Effects -->
+    <div class="cyber-grid"></div>
+    <div class="scan-line"></div>
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="ttt_logo1.jpeg" alt="TTT Systems Logo">
+                <span class="logo-glitch" data-text="TTT-SYSTEMS">TTT-SYSTEMS</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link">
+                    <span class="nav-text" data-text="HOME">HOME</span>
+                </a></li>
+                <li><a href="index.html#about" class="nav-link">
+                    <span class="nav-text" data-text="ABOUT">ABOUT</span>
+                </a></li>
+                <li><a href="index.html#services" class="nav-link active">
+                    <span class="nav-text" data-text="SERVICES">SERVICES</span>
+                </a></li>
+                <li><a href="index.html#solutions" class="nav-link">
+                    <span class="nav-text" data-text="SOLUTIONS">SOLUTIONS</span>
+                </a></li>
+                <li><a href="index.html#contact" class="nav-link nav-cta">
+                    <span class="nav-text">CONNECT</span>
+                    <span class="cta-glow"></span>
+                </a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== SERVICE HERO ===== -->
+    <section class="service-hero">
+        <div class="hero-circuit"></div>
+        <div class="hero-hologram"></div>
+        
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">HOME</a>
+                <span class="breadcrumb-sep">/</span>
+                <a href="index.html#services">SERVICES</a>
+                <span class="breadcrumb-sep">/</span>
+                <span class="breadcrumb-current">IT INFRASTRUCTURE</span>
+            </div>
+            
+            <div class="service-hero-content">
+                <div class="service-badge">
+                    <span class="badge-icon">⚡</span>
+                    <span class="badge-text">SERVICE_MODULE_01</span>
+                </div>
+                
+                <h1 class="service-hero-title">
+                    <span class="title-line">IT</span>
+                    <span class="title-line title-accent">INFRASTRUCTURE</span>
+                </h1>
+                
+                <p class="service-hero-desc">
+                    Enterprise-grade infrastructure architecture engineered for maximum performance, redundancy, and scalability. We build the backbone of your digital operations.
+                </p>
+                
+                <div class="service-hero-stats">
+                    <div class="hero-stat-item">
+                        <div class="stat-value">99.9%</div>
+                        <div class="stat-label">UPTIME_SLA</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="stat-value">24/7</div>
+                        <div class="stat-label">MONITORING</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="stat-value">&lt;15min</div>
+                        <div class="stat-label">RESPONSE_TIME</div>
+                    </div>
+                </div>
+                
+                <div class="service-hero-actions">
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-primary">
+                        <span class="btn-content">REQUEST CONSULTATION</span>
+                        <span class="btn-glitch"></span>
+                    </a>
+                    <a href="#features" class="cyber-btn cyber-btn-ghost">
+                        <span class="btn-content">EXPLORE CAPABILITIES</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OVERVIEW ===== -->
+    <section class="service-overview section">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <div class="section-label">
+                        <span class="label-bracket">[</span>
+                        <span class="label-text">WHAT_WE_DELIVER</span>
+                        <span class="label-bracket">]</span>
+                    </div>
+                    <h2 class="section-title">
+                        Building <span class="title-gradient">Future-Ready</span> Infrastructure
+                    </h2>
+                    <p class="overview-text">
+                        Your IT infrastructure is the foundation upon which your entire digital ecosystem operates. TTT Systems architects, deploys, and manages enterprise-grade infrastructure solutions that deliver uncompromising reliability, performance, and security.
+                    </p>
+                    <p class="overview-text">
+                        From on-premise data centers to hybrid cloud environments, we engineer infrastructure that scales with your business while maintaining operational excellence. Our solutions are built on industry-leading technologies and backed by 24/7 expert support.
+                    </p>
+                    
+                    <div class="overview-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <div class="highlight-text">Custom-designed infrastructure architectures</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <div class="highlight-text">Enterprise-grade hardware and software solutions</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <div class="highlight-text">Proactive monitoring and maintenance</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✓</div>
+                            <div class="highlight-text">Disaster recovery and business continuity planning</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-visual">
+                    <div class="tech-stack-card">
+                        <div class="tech-header">INFRASTRUCTURE_STACK</div>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <span class="tech-label">COMPUTE:</span>
+                                <span class="tech-value">Dell PowerEdge • HPE ProLiant</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">STORAGE:</span>
+                                <span class="tech-value">NetApp • Pure Storage • EMC</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">VIRTUALIZATION:</span>
+                                <span class="tech-value">VMware vSphere • Hyper-V</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">NETWORKING:</span>
+                                <span class="tech-value">Cisco • Juniper • Aruba</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">BACKUP:</span>
+                                <span class="tech-value">Veeam • Commvault • Rubrik</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">MONITORING:</span>
+                                <span class="tech-value">Nagios • Zabbix • PRTG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== KEY FEATURES ===== -->
+    <section id="features" class="service-features section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">CORE_CAPABILITIES</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Infrastructure <span class="title-gradient">Components</span>
+                </h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>SERVER INFRASTRUCTURE</h3>
+                    <p>High-performance server solutions from blade servers to rack-mounted systems. We design, deploy and manage physical and virtual server environments optimized for your workloads.</p>
+                    <div class="feature-tags">
+                        <span class="tag">PHYSICAL</span>
+                        <span class="tag">VIRTUAL</span>
+                        <span class="tag">BLADE</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                    </div>
+                    <h3>STORAGE SOLUTIONS</h3>
+                    <p>Scalable storage architectures including SAN, NAS, and object storage. From terabytes to petabytes, we ensure your data is accessible, protected, and efficiently managed.</p>
+                    <div class="feature-tags">
+                        <span class="tag">SAN</span>
+                        <span class="tag">NAS</span>
+                        <span class="tag">OBJECT</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        </svg>
+                    </div>
+                    <h3>VIRTUALIZATION</h3>
+                    <p>Complete virtualization strategies using VMware, Hyper-V, and container technologies. Maximize resource utilization, reduce costs, and improve deployment agility.</p>
+                    <div class="feature-tags">
+                        <span class="tag">VMWARE</span>
+                        <span class="tag">HYPER-V</span>
+                        <span class="tag">CONTAINERS</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                    </div>
+                    <h3>DATA CENTER DESIGN</h3>
+                    <p>Complete data center planning and implementation from power and cooling to rack layouts and cabling. We build resilient, efficient facilities that support your growth.</p>
+                    <div class="feature-tags">
+                        <span class="tag">DESIGN</span>
+                        <span class="tag">BUILD</span>
+                        <span class="tag">OPTIMIZE</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                        </svg>
+                    </div>
+                    <h3>BACKUP & RECOVERY</h3>
+                    <p>Comprehensive backup strategies with automated scheduling, off-site replication, and rapid recovery capabilities. Your data is protected against any disaster scenario.</p>
+                    <div class="feature-tags">
+                        <span class="tag">AUTOMATED</span>
+                        <span class="tag">REPLICATED</span>
+                        <span class="tag">TESTED</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3>PERFORMANCE MONITORING</h3>
+                    <p>Real-time infrastructure monitoring with intelligent alerting and analytics. We identify issues before they impact your business and optimize performance continuously.</p>
+                    <div class="feature-tags">
+                        <span class="tag">REAL-TIME</span>
+                        <span class="tag">ALERTS</span>
+                        <span class="tag">ANALYTICS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section class="service-process section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">DEPLOYMENT_PROTOCOL</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Our <span class="title-gradient">Implementation</span> Process
+                </h2>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>ASSESSMENT & PLANNING</h3>
+                        <p>We analyze your current infrastructure, business requirements, and growth projections to design the optimal solution architecture.</p>
+                        <div class="step-deliverables">
+                            <span>Infrastructure Audit</span>
+                            <span>Requirements Analysis</span>
+                            <span>Architecture Design</span>
+                        </div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>PROCUREMENT & SETUP</h3>
+                        <p>Hardware and software procurement, data center preparation, and initial configuration of all infrastructure components.</p>
+                        <div class="step-deliverables">
+                            <span>Hardware Procurement</span>
+                            <span>Facility Setup</span>
+                            <span>Initial Configuration</span>
+                        </div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>DEPLOYMENT & MIGRATION</h3>
+                        <p>Careful migration of workloads and data with minimal downtime. Rigorous testing ensures everything works perfectly before go-live.</p>
+                        <div class="step-deliverables">
+                            <span>Data Migration</span>
+                            <span>Testing & QA</span>
+                            <span>Go-Live Support</span>
+                        </div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>OPTIMIZATION & SUPPORT</h3>
+                        <p>Continuous monitoring, performance tuning, and proactive maintenance ensure your infrastructure operates at peak efficiency.</p>
+                        <div class="step-deliverables">
+                            <span>24/7 Monitoring</span>
+                            <span>Performance Tuning</span>
+                            <span>Ongoing Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BENEFITS ===== -->
+    <section class="service-benefits section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">VALUE_PROPOSITION</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Why Choose <span class="title-gradient">TTT Systems</span>
+                </h2>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚀</div>
+                    <h3>PROVEN EXPERTISE</h3>
+                    <p>Over a decade of experience deploying enterprise infrastructure across multiple industries. Our certified engineers bring deep technical knowledge to every project.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔧</div>
+                    <h3>VENDOR AGNOSTIC</h3>
+                    <p>We recommend the best solutions for your needs, not what's most profitable. Our partnerships with leading vendors ensure competitive pricing.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>RAPID DEPLOYMENT</h3>
+                    <p>Streamlined processes and experienced teams mean faster time-to-value. We minimize business disruption while maximizing results.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>BUILT-IN SECURITY</h3>
+                    <p>Security isn't an afterthought—it's integrated into every layer. From physical security to encryption, we protect your infrastructure.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📈</div>
+                    <h3>SCALABLE DESIGN</h3>
+                    <p>Infrastructure that grows with you. We build in expansion capacity and design for future requirements, protecting your investment.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>COST OPTIMIZATION</h3>
+                    <p>Right-sized solutions that balance performance and budget. We identify savings opportunities and eliminate waste without compromising quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING/PACKAGES ===== -->
+    <section class="service-packages section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">SERVICE_TIERS</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Infrastructure <span class="title-gradient">Packages</span>
+                </h2>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>ESSENTIAL</h3>
+                        <div class="package-desc">For small businesses and startups</div>
+                    </div>
+                    <div class="package-features">
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Basic server infrastructure</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Standard backup solutions</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Business hours support</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Basic monitoring</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Up to 10 users</span>
+                        </div>
+                    </div>
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-outline cyber-btn-full">
+                        <span class="btn-content">REQUEST QUOTE</span>
+                    </a>
+                </div>
+
+                <div class="package-card package-featured">
+                    <div class="package-badge">MOST POPULAR</div>
+                    <div class="package-header">
+                        <h3>PROFESSIONAL</h3>
+                        <div class="package-desc">For growing enterprises</div>
+                    </div>
+                    <div class="package-features">
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Advanced server infrastructure</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Enterprise backup & DR</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>24/7 priority support</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Advanced monitoring & alerts</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Virtualization included</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Up to 100 users</span>
+                        </div>
+                    </div>
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-primary cyber-btn-full">
+                        <span class="btn-content">REQUEST QUOTE</span>
+                        <span class="btn-glitch"></span>
+                    </a>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>ENTERPRISE</h3>
+                        <div class="package-desc">For large organizations</div>
+                    </div>
+                    <div class="package-features">
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Custom infrastructure design</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Multi-site redundancy</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Dedicated support team</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>AI-powered monitoring</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Full virtualization suite</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Unlimited users</span>
+                        </div>
+                        <div class="package-feature">
+                            <span class="feature-check">✓</span>
+                            <span>White-glove service</span>
+                        </div>
+                    </div>
+                    <a href="#contact-cta" class="cyber-btn cyber-btn-outline cyber-btn-full">
+                        <span class="btn-content">REQUEST QUOTE</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section id="contact-cta" class="service-cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Build Your <span class="title-gradient">Infrastructure?</span></h2>
+                <p class="cta-desc">Let's discuss your requirements and architect a solution that powers your success.</p>
+                
+                <div class="cta-actions">
+                    <a href="index.html#contact" class="cyber-btn cyber-btn-primary cyber-btn-large">
+                        <span class="btn-content">START YOUR PROJECT</span>
+                        <span class="btn-glitch"></span>
+                    </a>
+                    <a href="tel:+27681540303" class="cyber-btn cyber-btn-ghost cyber-btn-large">
+                        <span class="btn-content">CALL: +27 68 154 0303</span>
+                    </a>
+                </div>
+                
+                <div class="cta-info">
+                    <div class="cta-info-item">
+                        <span class="info-icon">📧</span>
+                        <a href="mailto:netthias@ttt-systems.com">netthias@ttt-systems.com</a>
+                    </div>
+                    <div class="cta-info-item">
+                        <span class="info-icon">📍</span>
+                        <span>Randburg, Gauteng, South Africa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RELATED SERVICES ===== -->
+    <section class="related-services section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-bracket">[</span>
+                    <span class="label-text">EXPLORE_MORE</span>
+                    <span class="label-bracket">]</span>
+                </div>
+                <h2 class="section-title">
+                    Related <span class="title-gradient">Services</span>
+                </h2>
+            </div>
+            
+            <div class="related-grid">
+                <a href="systems-integration.html" class="related-card">
+                    <div class="related-number">02</div>
+                    <h3>SYSTEMS INTEGRATION</h3>
+                    <p>Connect and unify your technology stack</p>
+                    <div class="related-arrow">→</div>
+                </a>
+                
+                <a href="network-solutions.html" class="related-card">
+                    <div class="related-number">03</div>
+                    <h3>NETWORK SOLUTIONS</h3>
+                    <p>High-performance connectivity infrastructure</p>
+                    <div class="related-arrow">→</div>
+                </a>
+                
+                <a href="cloud-services.html" class="related-card">
+                    <div class="related-number">05</div>
+                    <h3>CLOUD SERVICES</h3>
+                    <p>Hybrid and multi-cloud strategies</p>
+                    <div class="related-arrow">→</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-grid-bg"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="ttt_logo1.jpeg" alt="TTT Systems" class="footer-logo">
+                    <div class="footer-tagline">TRANSFORMING_TECHNOLOGY_TOGETHER</div>
+                    <div class="footer-location">
+                        <span class="loc-icon">📍</span>
+                        Randburg • Gauteng • South Africa
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>NAVIGATE</h4>
+                        <a href="index.html#home">Home</a>
+                        <a href="index.html#about">About</a>
+                        <a href="index.html#services">Services</a>
+                        <a href="index.html#solutions">Solutions</a>
+                        <a href="index.html#contact">Contact</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>SERVICES</h4>
+                        <a href="it-infrastructure.html">Infrastructure</a>
+                        <a href="systems-integration.html">Integration</a>
+                        <a href="cybersecurity.html">Cybersecurity</a>
+                        <a href="cloud-services.html">Cloud</a>
+                        <a href="support-247.html">Support</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>CONNECT</h4>
+                        <a href="mailto:netthias@ttt-systems.com">Email</a>
+                        <a href="tel:+27681540303">+27 68 154 0303</a>
+                        <a href="tel:+27102107093">+27 10 210 7093</a>
+                        <a href="tel:+27118860667">+27 11 886 0667</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-line"></div>
+                <div class="footer-copyright">
+                    <span>© 2025 TTT SYSTEMS</span>
+                    <span class="divider">|</span>
+                    <span>ALL_RIGHTS_RESERVED</span>
+                    <span class="divider">|</span>
+                    <span class="status-indicator">
+                        <span class="status-dot"></span>
+                        SYSTEM_ONLINE
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
